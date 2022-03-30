@@ -26,4 +26,5 @@ taktyka_opony_monako = function(Monako){
     cat("Na ten wyścig najlepiej będzie wybrać po jednym komplecie opon średnich i twardych")
   }
 }
+
 taktyka_opony_monako(monako)
