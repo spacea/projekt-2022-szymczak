@@ -6,4 +6,4 @@ Autorzy:
   Kornel Szymczak    
   
 Opis projektu:
-  Projekt zawiera aplikację, która dobiera taktykę doboru opon podczas wyścigu F1. #FORZAALPHATAURI
+  Projekt zawiera aplikację, która dobiera taktykę doboru opon podczas wyścigu F1.
