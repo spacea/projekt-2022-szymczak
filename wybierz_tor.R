@@ -7,4 +7,4 @@ wybor_toru = function(tor){
    cat(taktyka_opony_monza(monza))
  }  
 }
-wybor_toru(3)
+wybor_toru()
