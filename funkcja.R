@@ -33,7 +33,7 @@ taktyka_opony = function(tor){
   if(tor == "Monza")
   {
     czas_przejazdu_na_softach_monza = Dostepne_mieszanki_opon[3 , 2] / ((sample(c(Autodromo_Natzionale_Monza[6 , 2] : Autodromo_Natzionale_Monza[7 , 2]), 1) * Autodromo_Natzionale_Monza[4 , 2]) * Dostepne_mieszanki_opon[3 , 3])
-    okrazenie = Monza [4 , 2] * czas_przejazdu_na_softach_monza
+    okrazenie = Monza[4 , 2] * czas_przejazdu_na_softach_monza
     round(okrazenie, 0)
     czas_przejazdu_na_medach_monza = Dostepne_mieszanki_opon[2 , 2] / ((sample(c(Autodromo_Natzionale_Monza[6 , 2] : Autodromo_Natzionale_Monza[7 , 2]), 1) * Autodromo_Natzionale_Monza[4 , 2]) * Dostepne_mieszanki_opon[2 , 3])
     okrazenie = Monza[4 , 2] * czas_przejazdu_na_medach_monza
