@@ -1,4 +1,5 @@
 #funkcja_Monza
+
 taktyka_opony_monza = function(Monza){
   race_time = sample(c(Autodromo_Natzionale_Monza[6 , 2] : Autodromo_Natzionale_Monza[7 , 2]), 1) * Autodromo_Natzionale_Monza[4 , 2]
   czas_przejazdu_na_softach_monza = Dostepne_mieszanki_opon[3 , 2] / (race_time * Dostepne_mieszanki_opon[3 , 3])
@@ -27,3 +28,4 @@ taktyka_opony_monza = function(Monza){
   }
 }
 taktyka_opony_monza(monza)
+
