@@ -26,4 +26,4 @@ Instrukcja:
 - 1 -> tor Spa
 - 2 -> tor Monako
 - 3 -> tor Monza
-  program po wykonaniu wszystkich kroków poda taktykę doboru opon na wybranym torze.
+  program po wykonaniu wszystkich kroków poda taktykę doboru opon na wybranym torze. 
