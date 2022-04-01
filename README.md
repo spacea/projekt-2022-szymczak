@@ -10,7 +10,7 @@ Autorzy:
   
 Opis projektu:
   Projekt będzie zawierać aplikację, która dobiera taktykę doboru opon podczas wyścigu F1.
-  Wszystkie dane zebraliśmy wykonując własne pomiary w mapach oraz z oficjalnych danych udostępnianych przez F1.
+  Wszystkie dane zebraliśmy wykonując własne pomiary w mapach oraz z oficjalnych danych udostępnianych przez F1; Grafiki torów są wykonane przez nas a grafiki opon pochodzą z Wikipedii, na licencji CC BY-SA 4.0.
   
 Instrukcja:
   Aby wyświetlić taktykę opon należy uruchomić skrypty:
