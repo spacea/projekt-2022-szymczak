@@ -139,4 +139,4 @@ taktyka = which.min(abs(konfiguracje_opon - race_time))
 cat(taktyka_opony_monza(monza))
  }  
 }
-wybor_toru(2)
+wybor_toru()
