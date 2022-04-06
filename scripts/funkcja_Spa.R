@@ -1,6 +1,3 @@
-#pakiet
-library(readxl)
-
 #funkcja Spa
 taktyka_opony_spa = function(Spa){
   

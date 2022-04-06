@@ -1,6 +1,3 @@
-#pakiet
-library(readxl)
-
 #funkcja Spa
 taktyka_opony_spa = function(Spa){
   
@@ -32,18 +29,16 @@ konfiguracje_opon = c((2 * Spa_Francorchamps[8 , 2]) + ((2 * spa_softy) * (race_
 taktyka = which.min(abs(konfiguracje_opon - race_time))
 
   if(taktyka == 1){
-    "../grafiki/taktyka/spa/spa_ssm.png"
+     plot(load.image("grafiki/taktyka/spa/ssh.png"))
   }
   if(taktyka == 2){
-    "../grafiki/taktyka/spa/spa_shm.png"
+     plot(load.image("grafiki/taktyka/spa/shm.png"))
   }
   if(taktyka == 3){
-    "../grafiki/taktyka/spa/spa_hh.png"
+    plot(load.image("grafiki/taktyka/spa/hh.png"))
   }
   if(taktyka == 4){
-    "../grafiki/taktyka/spa/spa_hm.png"
+     plot(load.image("grafiki/taktyka/spa/hm.png"))
   }
 }
 taktyka_opony_spa(spa)
-
-

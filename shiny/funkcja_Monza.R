@@ -1,6 +1,3 @@
-#pakiet
-library(readxl)
-
 #funkcja Monza
 taktyka_opony_monza = function(Monza){
   
@@ -32,16 +29,16 @@ konfiguracje_opon = c((2 * Autodromo_Natzionale_Monza[8 , 2]) + ((2 * monza_soft
 taktyka = which.min(abs(konfiguracje_opon - race_time))
   
   if(taktyka == 1){
-    "../grafiki/taktyka/monza/monza_ssm.png"
+     plot(load.image("grafiki/taktyka/monza/ssh.png"))
   }
   if(taktyka == 2){
-    "../grafiki/taktyka/monza/monza_shm.png"
+     plot(load.image("grafiki/taktyka/monza/shm.png"))
   }
   if(taktyka == 3){
-    "../grafiki/taktyka/monza/monza_hh.png"
+    plot(load.image("grafiki/taktyka/monza/hh.png"))
   }
   if(taktyka == 4){
-    "../grafiki/taktyka/monza/monza_hm.png"
+     plot(load.image("grafiki/taktyka/monza/hm.png"))
   }
 }
 taktyka_opony_monza(monza)

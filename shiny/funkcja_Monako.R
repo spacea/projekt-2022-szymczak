@@ -1,7 +1,3 @@
-#pakiet
-library(readxl)
-library(imager)
-
 #funkcja Monako
 taktyka_opony_monako = function(Monako){
 
@@ -33,16 +29,16 @@ konfiguracje_opon = c((2 * Circuit_de_Monaco[8 , 2]) + ((2 * monako_softy) * (ra
 taktyka = which.min(abs(konfiguracje_opon - race_time))
 
   if(taktyka == 1){
-    "../grafiki/taktyka/monako/monako_ssm.png"
+     plot(load.image("grafiki/taktyka/monako/ssh.png"))
   }
   if(taktyka == 2){
-    "../grafiki/taktyka/monako/monako_shm.png"
+     plot(load.image("grafiki/taktyka/monako/shm.png"))
   }
   if(taktyka == 3){
-    "../grafiki/taktyka/monako/monako_hh.png"
+    plot(load.image("grafiki/taktyka/monako/hh.png"))
   }
   if(taktyka == 4){
-    "../grafiki/taktyka/monako/monako_hm.png"
+     plot(load.image("grafiki/taktyka/monako/hm.png"))
   }
 }
 taktyka_opony_monako(monako)
