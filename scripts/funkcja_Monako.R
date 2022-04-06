@@ -9,7 +9,7 @@ Circuit_de_Monaco = read_excel("excel/Circuit de Monaco.xlsx")
 Circuit_de_Monaco = as.data.frame(Circuit_de_Monaco)
 
 #parametry opon
-  Dostepne_mieszanki_opon = data.frame(Mieszanki = c("Hard", "Medium", "Soft"),
+Dostepne_mieszanki_opon = data.frame(Mieszanki = c("Hard", "Medium", "Soft"),
                                        Lifetime = c(3100, 2200 ,1100),
                                        Speed = c(1.07, 1.015, 1))    
 
@@ -25,10 +25,10 @@ race_time = sample(c(Circuit_de_Monaco[6 , 2] : Circuit_de_Monaco[7 , 2]), 1) * 
     okrazenia = Circuit_de_Monaco[4 , 2] * czas_przejazdu_na_hardach_monako
       monako_hardy = round(okrazenia, 0)
 
-#dostepne konfiguracje opon      
+#dostepne konfiguracje opon
 konfiguracje_opon = c((2 * Circuit_de_Monaco[8 , 2]) + ((2 * monako_softy) * (race_time / Circuit_de_Monaco[4 , 2])) + (monako_hardy * (race_time / Circuit_de_Monaco[4 , 2])), (2 * Circuit_de_Monaco[8 , 2]) + (monako_softy * (race_time / Circuit_de_Monaco[4 , 2])) + (monako_medy * (race_time / Circuit_de_Monaco[4 , 2])) + (monako_hardy * (race_time / Circuit_de_Monaco[4 , 2])), Circuit_de_Monaco[8 , 2] + ((2 * monako_hardy) * (race_time / Circuit_de_Monaco[4 , 2])), (Circuit_de_Monaco[8 , 2]) + (monako_medy * (race_time / Circuit_de_Monaco[4 , 2])) + (monako_hardy * (race_time / Circuit_de_Monaco[4 , 2])))
   
-#taktyka  
+#taktyka
 taktyka = which.min(abs(konfiguracje_opon - race_time))
 
   if(taktyka == 1){
